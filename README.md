@@ -1,2 +1,2 @@
 # sc-midlands-riding-routes
-SC Midlands Riding Routes — ITEC 362 website project
+SC Midlands Riding Routes
