@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Author: Augustus Tumminia -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SC Midlands Riding Routes - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* INTERNAL CSS for hero section */
+    .hero {
+      position: relative;
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+                  url('images/4900336.jpg') center/cover no-repeat;
+      height: 380px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .btn-hero {
+      background-color: #ff8c00;
+      color: #ffffff;
+      padding: 12px 28px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn-hero:hover {
+      background-color: #e07b00;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <a class="logo" href="index.html" aria-label="SC Midlands Riding Routes home"><img class="logo-mark" src="images/sc-twisty-road-logo.png" alt="" width="64" height="64" /><span class="logo-wordmark"><span class="logo-title">SC MIDLANDS</span><span class="logo-subtitle">RIDING ROUTES</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html" class="active" aria-current="page">Home</a>
+      <a href="route-directory.html">Route Directory</a>
+      <a href="submit-route.html">Submit A Route</a>
+      <a href="road-conditions.html">Road Conditions</a>
+      <a href="rider-resources.html">Rider Resources</a>
+    </nav>
+    <a href="submit-route.html" class="btn-submit">Submit Route</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Discover Scenic &amp; Challenging Midlands Routes</h1>
+    <a href="route-directory.html" class="btn-hero">Route Directory</a>
+  </section>
+
+  <!-- Featured Routes -->
+  <main class="routes-container">
+    <!-- Route Card 1 -->
+    <article class="route-card">
+      <div class="card-image">
+        <img src="images/murray.png" alt="Lake Murray Loop" />
+      </div>
+      <div class="card-content">
+        <h3>Lake Murray Loop</h3>
+        <span class="badge">62mi</span>
+        <p>A scenic and easy route around Lake Murray with many opportunities to stop.</p>
+        <a href="route-directory.html#lake-murray" class="btn-card">View Route</a>
+      </div>
+    </article>
+
+    <!-- Route Card 2 -->
+    <article class="route-card">
+      <div class="card-image">
+        <img src="images/wateree.png" alt="Wateree West" />
+      </div>
+      <div class="card-content">
+        <h3>Wateree West</h3>
+        <span class="badge">40mi</span>
+        <p>Camden to Great Falls via the west side of Lake Wateree. A great alternative to the interstate!</p>
+        <a href="route-directory.html#wateree-west" class="btn-card">View Route</a>
+      </div>
+    </article>
+
+    <!-- Route Card 3 -->
+    <article class="route-card">
+      <div class="card-image">
+        <img src="images/winnsboro.png" alt="Winnsboro Loop" />
+      </div>
+      <div class="card-content">
+        <h3>Winnsboro Loop</h3>
+        <span class="badge">55mi</span>
+        <p>A scenic and easy loop around the western side of Winnsboro up to Chester and back.</p>
+        <a href="route-directory.html#winnsboro" class="btn-card">View Route</a>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-brand"><div class="logo-title">SC MIDLANDS</div><div class="logo-subtitle">RIDING ROUTES</div></div>
+    <nav class="footer-links" aria-label="Footer navigation"><a href="index.html">Home</a>
+      <a href="route-directory.html">Route Directory</a>
+      <a href="submit-route.html">Submit Route</a>
+      <a href="road-conditions.html">Road Conditions</a>
+      <a href="rider-resources.html">Rider Resources</a></nav>
+    <div class="footer-copy">&copy; 2026 SC Midlands Riding Routes</div>
+  </footer>
+
+</body>
+</html>

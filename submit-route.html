@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Author: Augustus Tumminia -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SC Midlands Riding Routes - Submit a Route</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+<body class="interior-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="navbar">
+    <a class="logo" href="index.html" aria-label="SC Midlands Riding Routes home"><img class="logo-mark" src="images/sc-twisty-road-logo.png" alt="" width="64" height="64" /><span class="logo-wordmark"><span class="logo-title">SC MIDLANDS</span><span class="logo-subtitle">RIDING ROUTES</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="route-directory.html">Route Directory</a>
+      <a href="submit-route.html" class="active" aria-current="page">Submit A Route</a>
+      <a href="road-conditions.html">Road Conditions</a>
+      <a href="rider-resources.html">Rider Resources</a>
+    </nav>
+    <a href="submit-route.html" class="btn-submit">Submit Route</a>
+  </header>
+  <main id="main-content" class="submission-main">
+    <h1 class="sr-only">Submit a Route</h1>
+    <form class="route-form" id="route-form">
+      <div class="form-fields">
+        <div class="form-row"><label for="rider-name">Your Name</label><input id="rider-name" name="name" autocomplete="name" required maxlength="100" /></div>
+        <div class="form-row"><label for="rider-email">Email</label><input id="rider-email" name="email" type="email" autocomplete="email" required maxlength="254" /></div>
+        <div class="form-row"><label for="route-title">Route Title</label><input id="route-title" name="title" required maxlength="150" /></div>
+        <div class="form-row"><label for="route-locations">Start &amp; End Locations</label><input id="route-locations" name="locations" required maxlength="300" /></div>
+        <div class="form-notes"><label for="route-notes">Description &amp; Notes</label><textarea id="route-notes" name="notes" required rows="7" maxlength="5000"></textarea></div>
+        <div class="upload-control"><button type="button" class="upload-button">Upload Files/Media</button></div>
+      </div>
+      <div class="form-actions"><button type="button" class="btn-submit">Submit Route</button></div>
+    </form>
+  </main>
+  <footer class="footer">
+    <div class="footer-brand"><div class="logo-title">SC MIDLANDS</div><div class="logo-subtitle">RIDING ROUTES</div></div>
+    <nav class="footer-links" aria-label="Footer navigation"><a href="index.html">Home</a>
+      <a href="route-directory.html">Route Directory</a>
+      <a href="submit-route.html">Submit Route</a>
+      <a href="road-conditions.html">Road Conditions</a>
+      <a href="rider-resources.html">Rider Resources</a></nav>
+    <div class="footer-copy">&copy; 2026 SC Midlands Riding Routes</div>
+  </footer>
+</body>
+</html>

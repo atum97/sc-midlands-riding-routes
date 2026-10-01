@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Author: Augustus Tumminia -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SC Midlands Riding Routes - Route Directory</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /*INTERNAL CSS for this page layout and search bar */
+    .search-banner {
+      background-color: #e0e0e0;
+      padding: 24px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .filter-group label {
+      font-weight: bold;
+      color: #333333;
+    }
+
+    .filter-select {
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #ffffff;
+      font-size: 0.9rem;
+    }
+
+    .search-box {
+      display: flex;
+      gap: 8px;
+    }
+
+    .search-input {
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 220px;
+      font-size: 0.9rem;
+    }
+
+    .btn-search {
+      background-color: #8da9c4;
+      color: #0b2545;
+      font-weight: bold;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn-search:hover {
+      background-color: #7a98b3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <a class="logo" href="index.html" aria-label="SC Midlands Riding Routes home"><img class="logo-mark" src="images/sc-twisty-road-logo.png" alt="" width="64" height="64" /><span class="logo-wordmark"><span class="logo-title">SC MIDLANDS</span><span class="logo-subtitle">RIDING ROUTES</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="route-directory.html" class="active" aria-current="page">Route Directory</a>
+      <a href="submit-route.html">Submit A Route</a>
+      <a href="road-conditions.html">Road Conditions</a>
+      <a href="rider-resources.html">Rider Resources</a>
+    </nav>
+    <a href="submit-route.html" class="btn-submit">Submit Route</a>
+  </header>
+
+  <!-- Filter and Search Bar -->
+  <section class="search-banner">
+    <div class="filter-group">
+      <span><strong>Filter By:</strong></span>
+      
+      <label for="distance">Distance</label>
+      <select id="distance" class="filter-select">
+        <option value="">All</option>
+        <option value="under-50">Under 50 mi</option>
+        <option value="50-100">50 - 100 mi</option>
+      </select>
+
+      <label for="ride-type">Ride Type</label>
+      <select id="ride-type" class="filter-select">
+        <option value="">All</option>
+        <option value="scenic">Scenic</option>
+        <option value="twisties">Twisties</option>
+      </select>
+
+      <label for="difficulty">Difficulty</label>
+      <select id="difficulty" class="filter-select">
+        <option value="">All</option>
+        <option value="1">1/5</option>
+        <option value="2">2/5</option>
+        <option value="3">3/5</option>
+      </select>
+    </div>
+
+    <div class="search-box">
+      <input type="text" class="search-input" placeholder="Search routes..." />
+      <button class="btn-search">Search</button>
+    </div>
+  </section>
+
+  <main class="directory-container">
+    
+    <!-- Route 1: Lake Murray Loop -->
+    <article class="directory-card" id="lake-murray">
+      <h2 class="route-title">Lake Murray Loop</h2>
+      
+      <div class="route-media">
+        <img src="images/murray.png" alt="Lake Murray Photo" class="route-photo" />
+      </div>
+
+      <div class="route-details">
+        <p><strong>62mi</strong></p>
+        <p>Difficulty: 1/5</p>
+        <p>Traffic: 3/5</p>
+      </div>
+
+      <div class="route-description">
+        <p>Plenty of places to stop</p>
+        <p>Side roads are more challenging, but may dead-end</p>
+        <p>Good views of lake</p>
+      </div>
+
+      <div class="route-map">
+        <img src="images/murraymap.png" alt="Lake Murray Route Map Screenshot" class="map-img" />
+      </div>
+
+      <div class="map-link-container">
+        <a href="https://maps.app.goo.gl/G5Brb5zZzMDAAUCU8" target="_blank" rel="noopener noreferrer" class="maps-link">Google Maps Link</a>
+      </div>
+    </article>
+
+    <!-- Route 2: Wateree West -->
+    <article class="directory-card" id="wateree-west">
+      <h2 class="route-title">Wateree West</h2>
+      
+      <div class="route-media">
+        <img src="images/wateree.png" alt="Wateree West Photo" class="route-photo" />
+      </div>
+
+      <div class="route-details">
+        <p><strong>40mi</strong></p>
+        <p>Difficulty: 3/5</p>
+        <p>Traffic: 1/5</p>
+      </div>
+
+      <div class="route-description">
+        <p>Limited stops and gas</p>
+        <p>Low traffic but few safe passing zones</p>
+      </div>
+
+      <div class="route-map">
+        <img src="images/watereemap.png" alt="Wateree West Route Map Screenshot" class="map-img" />
+      </div>
+
+      <div class="map-link-container">
+        <a href="https://maps.app.goo.gl/jQjtq3HiahNdHkVw8" target="_blank" rel="noopener noreferrer" class="maps-link">Google Maps Link</a>
+      </div>
+    </article>
+
+    <!-- Route Item 3: Winnsboro Loop -->
+    <article class="directory-card" id="winnsboro">
+      <h2 class="route-title">Winnsboro Loop</h2>
+      
+      <div class="route-media">
+        <img src="images/winnsboro.png" alt="Winnsboro Loop Photo" class="route-photo" />
+      </div>
+
+      <div class="route-details">
+        <p><strong>55mi</strong></p>
+        <p>Difficulty: 2/5</p>
+        <p>Traffic: 2/5</p>
+      </div>
+
+      <div class="route-description">
+        <p>Fast sweepers</p>
+        <p>Limited stops and gas</p>
+        <p>Watch for driveways and sand</p>
+      </div>
+
+      <div class="route-map">
+        <img src="images/winnsboro-map.png" alt="Winnsboro Loop Route Map Screenshot" class="map-img" />
+      </div>
+
+      <div class="map-link-container">
+        <a href="https://maps.app.goo.gl/9hsNMiH4gxe9R1yo8" target="_blank" rel="noopener noreferrer" class="maps-link">Google Maps Link</a>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-brand"><div class="logo-title">SC MIDLANDS</div><div class="logo-subtitle">RIDING ROUTES</div></div>
+    <nav class="footer-links" aria-label="Footer navigation"><a href="index.html">Home</a>
+      <a href="route-directory.html">Route Directory</a>
+      <a href="submit-route.html">Submit Route</a>
+      <a href="road-conditions.html">Road Conditions</a>
+      <a href="rider-resources.html">Rider Resources</a></nav>
+    <div class="footer-copy">&copy; 2026 SC Midlands Riding Routes</div>
+  </footer>
+
+</body>
+</html>
